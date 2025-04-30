@@ -15,6 +15,7 @@ The project is divided into three main sections, each with its own notebook (`.i
 ---
 
 ## Repository Structure
+```
 /
 ├── section1_deeplabcut_gui_napari/
 │   ├── 01_Deeplabcut_Gui_Napari.ipynb
@@ -42,7 +43,7 @@ The project is divided into three main sections, each with its own notebook (`.i
 │       └── config.json
 ├── LICENSE
 └── README.md
-
+```
 - **Section 1**: Data Annotation with DeepLabCut and Napari GUI  
   (Preparation and manual labeling of frames for training the pose estimation model.)
 
