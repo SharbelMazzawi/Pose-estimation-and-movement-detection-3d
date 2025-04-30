@@ -42,6 +42,7 @@ The project is divided into three main sections, each with its own notebook (`.i
 │       ├──plotting_final.py
 │       └── config.json
 ├── LICENSE
+├── .gitignore
 └── README.md
 ```
 - **Section 1**: Data Annotation with DeepLabCut and Napari GUI  
