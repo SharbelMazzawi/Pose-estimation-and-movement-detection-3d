@@ -1,0 +1,41 @@
+{"data_process": {
+    "file_name": "camera_1_data.csv",
+    "coordinates": 2,
+    "pcutoff": 0.5
+},
+"movement_analysis": {
+    "file_path": "df_linear_interpolation.csv",
+    "video_path": "mouse_video_camera-1DLC_Resnet50_camera-1Dec18shuffle1_snapshot_090_p60_labeled.mp4",
+    "column_groups":{
+        "Right_hand": [1, 2, 3],
+        "Left_hand": [16, 17, 18],
+        "Food": [31, 32]},
+
+    "thresholds": {
+        "Right_hand": 12,
+        "Left_hand": 12,
+        "Food": 15
+    },
+
+    "data_start_row": 3,
+    "frames_folder": "extracted_frames",
+    "min_length": 10,
+    "padd_trial": 3,
+    "image_path":0,
+    "reference_idx": 0
+},
+
+"comparison": {
+    "results_path": "results.csv",
+    "ground_truth_path": "ground_truth.csv"
+},
+
+"plotting": {
+    "valid_path": "valid_movement.csv",
+    "non_valid_path": "non_valid_movement.csv",
+    "data_3D_file": "mouse_video_DLC_3D.csv",
+    "file": "valid",
+    "trial_num": "all",
+    "plotting_type": "3D"
+    }
+}

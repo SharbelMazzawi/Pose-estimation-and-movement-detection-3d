@@ -1,0 +1,104 @@
+# Project definitions (do not edit)
+Task: camera-1
+scorer: Your name and the labor name
+date: Dec18
+multianimalproject: false
+identity:
+
+
+# Project path (change when moving around)
+project_path: path to the project that you created in Napari (The folder)
+
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  path to the video of the current camera you are working on (The path to the video in the folder of the project you created in Napari)
+  e.g:    
+  path_to_the_project\videos\mouse_video_camera-1.mp4: #if the video name is different, adjust it.
+    crop: 0, 336, 0, 336
+bodyparts:
+- right_hand_center
+- right_finger1
+- right_finger2
+- right_finger3
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+- right_finger4
+- left_hand_center
+- left_finger1
+- left_finger2
+- left_finger3
+- left_finger4
+- food
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 200
+
+
+# Plotting configuration
+skeleton:
+- - right_hand_center
+  - right_finger1
+- - right_hand_center
+  - right_finger2
+- - right_hand_center
+  - right_finger3
+- - right_hand_center
+  - right_finger4
+- - left_hand_center
+  - left_finger1
+- - left_hand_center
+  - left_finger2
+- - left_hand_center
+  - left_finger3
+- - left_hand_center
+  - left_finger4
+
+skeleton_color: black
+pcutoff: 0.1
+dotsize: 3
+alphavalue: 0.7
+colormap: rainbow
+
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
